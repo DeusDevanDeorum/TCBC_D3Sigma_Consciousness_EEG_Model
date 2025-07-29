@@ -1,81 +1,54 @@
-# 🧠 TCBC_D³Σⁿ_Consciousness_EEG_Model
+# TCBC_D3Σ_Consciousness_EEG_Model
 
-## 🌐 Nombre Formal
+Este repositorio contiene los algoritmos y visualizaciones computacionales utilizados en la validación del modelo **TCBC** (Teoría de la Consciencia Biométrica Cuántica) y la formulación algebraica **D³Σⁿ**, definidos originalmente como:
 
-**D³Σⁿ: Superposición Cuántica de la Consciencia**
-
-Una Teoría Algebraica Formal para Sistemas Dinámicos de Consciencia, aplicada a la validación computacional de actividad EEG durante crisis de Epilepsia del Lóbulo Temporal Izquierdo (ELTI), con simulación, análisis fractal y modelos dinámico-geométricos.
-
----
-
-## 🧬 Descripción
-
-Este repositorio contiene el módulo MATLAB para la validación computacional de la teoría **TCBC** (Teoría de la Consciencia Biométrica Cuántica) integrada con el modelo simbólico y algebraico **D³Σⁿ**. El sistema permite:
-
-- Simulación EEG de patrones epilépticos (crisis ELTI)
-- Estimación de dimensión fractal por canal (método Higuchi)
-- Cálculo del parámetro geométrico-ontológico $\kappa_0$
-- Comparación con datos reales del dataset CHB-MIT (PhysioNet)
-- Visualización de canales (F7, T7, C3, P7) durante crisis
-- Reproducción de los colapsos simbólicos y geométricos propuestos por D³Σⁿ
+> **D³Σ**: *Superposición Cuántica de la Consciencia*  
+> **D³Σⁿ**: *Teoría Algebraica Formal para Sistemas Dinámicos de Consciencia*
 
 ---
 
-## 💡 Componentes Clave
+## Contenido
 
-- `modelo_TCBC_ajuste_optimizado.m`: Script principal
-- `fractal_dimension.m`: Cálculo de la dimensión fractal
-- `datos_simulados.mat`: Señales EEG sintéticas con componentes theta, agudas y beta
-- `grafico_resultado_TCBC.tikz`: Gráfico vectorial generado en TikZ (no depende de imagen externa)
-- `README.md`: Documento explicativo con estructura reproducible
-- `.gitignore`: Optimizado para proyectos MATLAB
+- Código en MATLAB para simulación EEG de epilepsia temporal izquierda (ELTI)
+- Algoritmos de cálculo de dimensión fractal (Higuchi)
+- Parámetros del modelo TCBC para canales específicos (F7, T7, C3, P7)
+- Figuras en TikZ para validación visual en publicaciones LaTeX
 
 ---
 
-## 🧪 Resultados Validados
+## Requisitos
 
-- Reducción de DF en regiones ELTI simuladas: $0.868 \pm 0.021$
-- Valor estimado de $\kappa_0$ en T7: $5.00 \times 10^{-3}$ (vs. $2.7 \times 10^{-71}$ estándar)
-- Reproducción del colapso simbólico: $\Sigma^n < 0.35$
-- Correlación con datos reales: $r = 0.98$, $p < 0.001$
-
----
-
-## 📸 Figura Integrada
-
-La imagen ha sido recreada directamente en TikZ para garantizar fidelidad y evitar errores ortográficos. Representa:
-
-- Múltiples trazos EEG en canales F7, T7, C3, P7
-- Colapso de dimensión fractal en T7
-- Umbral patológico DF = 1.38 indicado visualmente
+- MATLAB R2021a o posterior
+- Toolboxes: Signal Processing, Curve Fitting
+- Datos clínicos (reales): descargables desde PhysioNet (CHB-MIT)
 
 ---
 
-## 📚 Referencias Académicas
+## Licencia
 
-- Hameroff & Penrose (2014) – Orch-OR Theory
-- Zhang et al. (2020) – Fractal EEG en epilepsia
-- Spencer et al. (1992) – Patrones en crisis temporales
-- Guidelines ILAE 2023 – Umbrales clínicos DF
+Este proyecto está licenciado bajo la Licencia **Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)**.
 
----
+Esto significa que:
+- Puede compartirse libremente **con atribución adecuada**
+- No puede usarse con fines comerciales
+- **No puede modificarse** ni utilizarse para obras derivadas
 
-## 🔬 Licencia
-
-Este proyecto está licenciado bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), lo que permite compartir y adaptar con atribución, sin uso comercial no autorizado.
+> Más información en: [https://creativecommons.org/licenses/by-nc-nd/4.0/](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ---
 
-## 🛠️ Pendientes
+## Créditos
 
-- [ ] Subir versión final de imagen corregida (con “la Consciencia” y ELTI)
-- [ ] Añadir resultados comparativos reales-simulados
-- [ ] Documentación detallada para reproducibilidad
-- [ ] Integración simbólica automática con módulo ELTI-D³Σⁿ
-- [ ] Publicar notebook de análisis paramétrico
+Autor: Roberto J Romero De Anda
+Afiliación: Proyecto D³Σⁿ – Teoria Algebraica de la Consciencia Cuántica   
+Contacto: robertromero [at] email [deus.devan.deorum@icloud.com] com
 
 ---
 
-## 📎 Cita Recomendada
+## Pendientes
 
-> Romero, R. (2025). *D³Σⁿ: Superposición Cuántica de la Consciencia. Teoría Algebraica para Sistemas Dinámicos de Consciencia*. Repositorio GitHub: [https://github.com/tuusuario/TCBC_D3Sigma_Consciousness_EEG_Model](https://github.com/tuusuario/TCBC_D3Sigma_Consciousness_EEG_Model)
+- Subida de scripts completos de validación cruzada
+- Integración automática con datos CHB-MIT
+- Versión simbólica del operador de qualia \(\hat{\mathcal{Q}}\) en Simulink
+
+---
