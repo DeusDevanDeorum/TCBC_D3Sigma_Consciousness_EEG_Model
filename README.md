@@ -1,43 +1,40 @@
 # TCBC_D3Sigma_Consciousness_EEG_Model
 
-Este repositorio contiene la implementación en MATLAB del modelo **TCBC** (Teoría Cuántico-Geometrizante de la Conciencia) y su validación computacional a través de señales EEG simuladas y reales, incluyendo:
+Este repositorio contiene el modelo computacional completo para la validación del marco TCBC (Teoría del Campo Base Consciente) y su extensión fractal simbólica D³Σⁿ, aplicado al análisis de señales EEG simuladas y reales, particularmente en el contexto de epilepsia del lóbulo temporal izquierdo (LTI).
 
-- Simulación de patrones de epilepsia temporal izquierda (LTI)
-- Cálculo de dimensión fractal (DF) usando el método de Higuchi
-- Estimación del parámetro geométrico $\kappa_0$ del modelo TCBC
-- Comparación con datos clínicos reales (CHB-MIT / PhysioNet)
+## 📌 Contenido
+
+- Simulaciones MATLAB que reproducen actividad EEG patológica (ondas agudas, actividad theta/beta)
+- Estimación de dimensión fractal (DF) por canal
+- Validación comparativa con datos clínicos reales (CHB-MIT)
+- Visualización de patrones topográficos y simbólicos
+- Resultados teóricos alineados con la dinámica cuántico-geométrica propuesta por el modelo TCBC
+
+## 📎 Requisitos
+
+- MATLAB R2023a o superior
+- Toolboxes: Signal Processing, Statistics
+
+## 🧠 Objetivo
+
+Demostrar computacionalmente la ruptura de acoplamiento entre conciencia y geometría espaciotemporal durante crisis, así como la pérdida de integración fractal neuronal en estados alterados, validando cuantitativamente:
+
+\[
+\frac{d(df)}{dt} = \Gamma \cdot \lambda_{\text{field}} \cdot I_C
+\]
+
+## 🔬 Referencias
+
+- Hameroff & Penrose (2014) – Orch OR Theory
+- Englôt et al. (2017) – Fractal dimension in epilepsy
+- Zhang et al. (2020) – Coherence disruption in TLE
+- Modelo D³Σⁿ — Documento Teórico de Campo Consciente (2025)
+
+## 📜 Licencia
+
+Este proyecto está licenciado bajo **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.  
+Puedes compartir, adaptar y reutilizar con fines académicos, pero **no puedes usarlo comercialmente** sin autorización explícita.
+
+🔗 [Ver licencia completa](http://creativecommons.org/licenses/by-nc/4.0/)
 
 ---
-
-## 📁 Contenido
-
-- `modelo_TCBC.m` → Generación de señales EEG simuladas y análisis
-- `fractal_dimension.m` → Función para cálculo de DF
-- `resultados/` → Carpeta sugerida para guardar salidas gráficas
-- `.gitignore` → Exclusión de archivos temporales o grandes
-
----
-
-## 📘 Requisitos
-
-- MATLAB R2021b o superior
-- Toolboxes: Signal Processing, Curve Fitting (opcional)
-- Scripts probados en R2023a
-
----
-
-## 📊 Resultados esperados
-
-La validación confirma:
-
-- Reducción de DF en zonas LTI durante crisis ($DF < 1.38$)
-- Elevación de $\kappa_0$ en 68 órdenes de magnitud
-- Alta correlación con datos clínicos reales ($r = 0.98$)
-
----
-
-## 📄 Licencia
-
-Este repositorio está bajo la licencia MIT. El código es de libre acceso para fines de investigación, citando adecuadamente.
-
-> “La geometría del campo consciente es fractal, simbólica y cuantificable.” — Modelo D³Σⁿ
