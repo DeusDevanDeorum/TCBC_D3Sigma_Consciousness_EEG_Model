@@ -1,6 +1,6 @@
 # TCBC_D3Sigma_Consciousness_EEG_Model
 
-Este repositorio contiene el modelo computacional completo para la validación de la **Teoría de Consciencia Biométrica Cuántica (TCBC)** y su extensión fractal simbólica **D³Σⁿ**, aplicada al análisis de señales EEG simuladas y reales, particularmente en el contexto de epilepsia del lóbulo temporal izquierdo (LTI).
+Este repositorio contiene el modelo computacional completo para la validación de la **Teoría de Consciencia Biométrica Cuántica (TCBC)** y su extensión fractal simbólica **D³Σⁿ**, aplicada al análisis de señales EEG simuladas y reales, particularmente en el contexto de epilepsia del lóbulo temporal izquierdo (ELTI).
 
 ## 📌 Contenido
 
