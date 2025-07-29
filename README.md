@@ -9,7 +9,7 @@ Este repositorio contiene los algoritmos y visualizaciones computacionales utili
 
 ## Contenido
 
-- Código en MATLAB para simulación EEG de epilepsia temporal izquierda (ELTI)
+- Código en MATLAB para simulación EEG de epilepsia temporal izquierdo (ELTI)
 - Algoritmos de cálculo de dimensión fractal (Higuchi)
 - Parámetros del modelo TCBC para canales específicos (F7, T7, C3, P7)
 - Figuras en TikZ para validación visual en publicaciones LaTeX
@@ -40,8 +40,8 @@ Esto significa que:
 ## Créditos
 
 Autor: Roberto J Romero De Anda
-Afiliación: Proyecto D³Σⁿ – Teoria Algebraica de la Consciencia Cuántica   
-Contacto: robertromero [at] email [deus.devan.deorum@icloud.com] com
+Afiliación: Proyecto D³Σⁿ – Teoria Formal para Sistemas Dinámicos de Consciencia  
+Contacto: Roberto J Romero De Anda email : deus.devan.deorum@icloud.com
 
 ---
 
