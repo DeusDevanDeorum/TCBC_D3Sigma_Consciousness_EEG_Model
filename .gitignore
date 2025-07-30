@@ -1,0 +1,51 @@
+# Archivos generados por MATLAB
+*.asv
+*.m~
+*.mlx~
+*.fig
+*.mat
+*.p
+*.mex*
+*.log
+*.bak
+*.autosave
+
+# Directorios temporales
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archivos de simulación o exportación
+output/
+results/
+cache/
+temp/
+*.out
+*.tmp
+*.txt
+
+# Archivos LaTeX auxiliares
+*.aux
+*.log
+*.toc
+*.lot
+*.lof
+*.out
+*.gz
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.nav
+*.snm
+*.vrb
+
+# Archivos de imágenes generadas
+*.png
+*.jpg
+*.pdf
+*.eps
+*.svg
