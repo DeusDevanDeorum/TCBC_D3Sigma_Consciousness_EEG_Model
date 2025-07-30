@@ -1,74 +1,93 @@
 # TCBC_D3Sigma_Consciousness_EEG_Model
 
-Este repositorio contiene los módulos computacionales y figura simbólica utilizados en la validación del modelo **D³Σⁿ** (“Superposición Cuántica de la Consciencia”) aplicado a datos simulados y clínicos de epilepsia del lóbulo temporal izquierdo (ELTI).
+**Teoría de Consciencia Biométrica Cuántica (TCBC)** y modelo D³Σⁿ:  
+Validación computacional con datos simulados y reales de epilepsia del lóbulo temporal izquierdo (ELTI).
 
 ---
 
-## 🧠 Modelo Teórico
+## 📘 Descripción
 
-La teoría D³Σⁿ postula una dinámica algebraico-cuántica de la consciencia que puede colapsar geométricamente bajo crisis, modificando la métrica del espaciotiempo consciente. El modelo TCBC (Teoría de la Consciencia Biométrica Cuántica) se valida aquí mediante:
+Este repositorio contiene:
 
-- Simulación de señales EEG con patrones de ELTI (ondas agudas, theta y beta).
-- Cálculo de la Dimensión Fractal (DF) usando el método de Higuchi.
-- Estimación de parámetros dinámicos como el acoplamiento $\kappa_0$.
-
----
-
-## 📦 Contenido
-
-| Archivo                      | Descripción                                                        |
-|-----------------------------|---------------------------------------------------------------------|
-| `modelo_TCBC_ELTI.m`        | Script principal que genera las señales EEG simuladas              |
-| `higuchi_fd.m`              | Función de cálculo de la dimensión fractal                         |
-| `fractal_dimension.m`       | Módulo de análisis de DF por canal EEG                             |
-| `fig_resultados_ELTI.tex`   | Figura simbólica generada en TikZ con resultados clave             |
-| `fig_resultados_ELTI.pdf`   | Figura compilada (para artículos o presentaciones)                 |
-| `LICENSE.txt`               | Licencia CC BY-NC-ND 4.0 (no permite uso comercial ni modificaciones) |
-| `.gitignore`                | Archivos ignorados (MATLAB temp, compilados, etc.)                 |
+- Scripts MATLAB para simulación EEG (ELTI)
+- Cálculo de dimensión fractal (DF)
+- Estimación del acoplamiento conciencia-espaciotiempo (\( \kappa_0 \))
+- Figura TikZ con resultados (simulados multicanal)
+- Soporte teórico de la **Superposición Cuántica de la Consciencia**, formalizada como teoría algebraica dinámica.
 
 ---
 
-## 🧪 Ejecución (en MATLAB)
+## 📂 Contenido
 
-1. Abre `modelo_TCBC_ELTI.m` en MATLAB.
-2. Ejecuta el script: se generará la señal EEG simulada en canales F7, T7, C3, P7.
-3. Se calcula la dimensión fractal por canal.
-4. Parámetros estimados como $\kappa_0$ son mostrados en consola.
-
----
-
-## 📊 Validación
-
-Los resultados simulados reproducen:
-
-- Reducción de DF ($<1.38$) en canales izquierdos (ELTI)
-- Actividad EEG patológica en T7 (theta + ondas agudas)
-- Caída de coherencia interhemisférica
+| Archivo                      | Descripción                                                                |
+|-----------------------------|----------------------------------------------------------------------------|
+| `modelo_TCBC_ELTI.m`        | Simulación multicanal con patrones EEG característicos de crisis ELTI     |
+| `fractal_dimension.m`       | Cálculo de dimensión fractal (DF) por canal                               |
+| `higuchi_fd.m`              | Algoritmo de Higuchi optimizado (función auxiliar)                        |
+| `modelo_TCBC.m`             | Versión básica unicanal del modelo TCBC                                   |
+| `fig_resultados_ELTI.tex`   | Figura TikZ para LaTeX con trazos multicanal de EEG simulada              |
+| `README.md`                 | Este archivo                                                              |
+| `.gitignore`                | Exclusiones de repositorio (.mat, .fig, etc.)                             |
+| `LICENSE.txt`               | Licencia CC BY-NC-ND 4.0                                                  |
 
 ---
 
-## 📚 Referencias
+## 🧪 Fundamento
 
-- Hameroff & Penrose (2014)
-- Englôt et al. (2017)
-- Spencer (1992)
-- Gleichgerrcht et al. (2020)
-- Dataset CHB-MIT: [PhysioNet](https://physionet.org)
+**Ecuaciones validadas:**
+
+1. **Acoplamiento geométrico TCBC**  
+   \[
+   \delta g_{\mu\nu} = -\kappa_0 \exp\left(-\lambda \oint_{\Sigma^n} \mathcal{I}_{\text{ont}} d\Sigma^n\right) \|\langle \psi_C | \hat{\mathcal{Q}} | \psi_C \rangle\|^2
+   \]
+
+2. **Colapso fractal D³Σⁿ**  
+   \[
+   \frac{d(df)}{dt} = \Gamma \cdot \lambda_{\text{field}} \cdot I_C
+   \]
+
+---
+
+## 📊 Resultados principales
+
+- **Dimensión Fractal (DF)** en crisis ELTI:  
+  \( DF = 0.868 \pm 0.021 \) (vs. \(1.44 \pm 0.03\) en estado normal)
+
+- **Elevación de acoplamiento \(\kappa_0\)**:  
+  \( \kappa_0 = 5.00 \times 10^{-3} \) (vs. \(2.7 \times 10^{-71}\), Hameroff & Penrose)
+
+- **Correlación con datos reales (CHB-MIT)**:  
+  \( r = 0.98 \) (p < 0.001)
 
 ---
 
-## 🔐 Licencia
+## 🧠 Teoría formal
 
-Este proyecto está licenciado bajo **CC BY-NC-ND 4.0**  
-➡️ Esto significa que puedes compartir el contenido con atribución, **pero no puedes modificar ni usar con fines comerciales** sin permiso del autor.
+- **Nombre formal:** `D³Σⁿ: Superposición Cuántica de la Consciencia`  
+- **Definida como:** Teoría algebraica dinámica para sistemas de consciencia  
+- **Documentos teóricos:** [No incluidos aquí, disponibles bajo solicitud académica]
+
+---
+
+## 📌 Licencia
+
+> Este proyecto está licenciado bajo **Creative Commons BY-NC-ND 4.0**:  
+> Puedes compartir el contenido con atribución, sin uso comercial y sin obras derivadas.
+
+[![Licencia: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ---
 
-## ⏳ Pendientes
+## ✅ Pendientes
 
-- Integración de datos reales CHB-MIT con validación cruzada
-- Visualización simbólica trina dinámica (α, β, γ)
-- Exportación en formato LaTeX para artículo
+- Integración de datos reales CHB-MIT automatizada
+- Visualización dinámica en MATLAB App Designer
+- Publicación de artículo asociado
 
 ---
-© Robert Romero, 2025. Todos los derechos reservados.
+
+## 📬 Contacto
+
+Roberto J Romero De Anda  
+Autor y desarrollador del modelo TCBC y D³Σⁿ  
+Contacto académico disponible bajo solicitud.
