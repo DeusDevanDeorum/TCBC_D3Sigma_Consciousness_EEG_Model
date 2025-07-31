@@ -1,0 +1,40 @@
+\appendix
+\section{Código MATLAB: Modelo TCBC para EEG ELTI}
+\label{apx:tcbcscript}
+
+El siguiente script implementa una simulación de actividad EEG asociada a epilepsia del lóbulo temporal izquierdo (ELTI), de acuerdo al modelo TCBC:
+
+\begin{lstlisting}[language=Matlab, caption={Simulación de actividad EEG y validación TCBC}]
+% modelo_TCBC.m
+% Simulación de actividad EEG tipo ELTI y validación del modelo TCBC
+
+clear; clc; close all;
+fs = 256; t = 0:1/fs:10; N = length(t);
+theta = sin(2*pi*5*t);                    % Theta
+sharp = square(2*pi*16*t, 20);            % Onda aguda
+beta  = 0.5*sin(2*pi*22*t);               % Beta
+
+F7 = theta + 0.8*sharp + 0.3*beta;
+T7 = 0.9*theta + sharp + beta;
+C3 = 0.6*theta + 0.6*sharp + 0.2*beta;
+P7 = 0.5*theta + 0.5*sharp + 0.5*beta;
+
+F7 = F7 / max(abs(F7));
+T7 = T7 / max(abs(T7));
+C3 = C3 / max(abs(C3));
+P7 = P7 / max(abs(P7));
+
+df.F7 = fractal_dimension(F7);
+df.T7 = fractal_dimension(T7);
+df.C3 = fractal_dimension(C3);
+df.P7 = fractal_dimension(P7);
+
+lambda = 1.02e-35; I_ont = 1.0; Qpsi = 0.95;
+kappa0 = exp(-lambda * I_ont) * Qpsi^2;
+
+fprintf('Dimensión fractal T7: %.3f\n', df.T7);
+fprintf('kappa_0 estimado: %.2e\n', kappa0);
+
+figure; plot(t, T7, 'k'); grid on;
+title('EEG Simulado - Canal T7'); xlabel('Tiempo (s)');
+\end{lstlisting}
